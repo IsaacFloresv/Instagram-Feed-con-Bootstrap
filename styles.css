@@ -6,3 +6,10 @@ h1{
     font-family: 'Titan One', cursive;
 }
 
+body{
+    background: gray;
+}
+
+button{
+    background: gray;
+}
