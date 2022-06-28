@@ -17,7 +17,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <a class="navbar-brand" href="#"> <i class="fab fa-instagram">
                 <h1><i class="bi bi-instagram"></i>
             </i> Instagram</a></h1>
@@ -44,19 +44,20 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body">
-                                    Here goes your new post
-                                </div>
-                                <div class="modal-footer">
-                                    <div class="footer-icon-map-marker" style="padding-right: 0.25rem;"><i
-                                            class="fas fa-map-marker-alt"></i></div>
-                                    <div class="footer-icon-camera" style="padding-right: 13.8rem">
-                                        <i class="fas fa-camera"></i>
+                                <div class="modal-body container-fluid">
+                                    <div class="input-group">
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
                                     </div>
-                                    <div class="row justify-content"><i class="bi bi-camera"></i><i class="bi bi-geo-alt"></i></div>
-                                    
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <div class="floid-left mt-2">
+                                        <button class="bg-white rounded"><i class="bi bi-camera"></i></button>
+                                        <button class="bg-white rounded"><i class="bi bi-geo-alt"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary "
+                                        data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Agregar</button>
                                 </div>
                             </div>
                         </div>
@@ -78,53 +79,69 @@
             </ul>
         </div>
     </nav>
-    <div class="row">
-        <div class="col text-right p-0">
-            <button class="border-0 btn btn-online"><a href="index.html"><i
-                        class="bi bi-grid-3x3-gap-fill"></i></a></button>
+<!--Link a index1-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-right bg-white p-0">
+                <button class="border-0 btn btn-online "><a href="index.html"><i
+                            class="bi bi-grid-3x3-gap-fill"></i></a></button>
+            </div>
+            <div class="col text-left bg-white p-0">
+                <button class="border-0 btn bg-dark"><a href="index2.html"><i
+                            class="bi bi-square-fill"></i></a></button>
+            </div>
         </div>
-        <div class="col text-left p-0">
-            <button class="border-0 btn bg-dark"><a href="index2.html"><i
-                        class="bi bi-square-fill"></i></a></button>
+
+
+        <!--Cards-->
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="p-0">
+                        <p class="card-text text-left p-0">
+                        <h3>Mi Primera Foto</h3>
+                        </p>
+                        <p class="card-text text-right">11/10</p>
+                    </div>
+                    <img src="https://picsum.photos/id/230/200/100" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card p-2" style="width: 18rem;">
+                    <span>
+                        <h3>Mi Segunda Foto</h3>
+                    </span>
+                    <img src="https://picsum.photos/id/232/200/100" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card p-2" style="width: 18rem;">
+                    <span>
+                        <h3>Mi Tercera Foto</h3>
+                    </span>
+                    <img src="https://picsum.photos/id/233/200/100" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="card" style="width: 50rem;">
-            <div class="p-0">
-                <p class="card-text text-left p-0"><h3>Mi Primera Foto</h3></p>
-                <p class="card-text text-right">11/10</p></div>
-            <img src="https://picsum.photos/id/230/250/200" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card p-2" style="width: 18rem;">
-            <span><h3>Mi Segunda Foto</h3></span>
-            <img src="https://picsum.photos/id/232/200/300" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card p-2" style="width: 18rem;">
-            <span><h3>Mi Tercera Foto</h3></span>
-            <img src="https://picsum.photos/id/233/200/300" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-    </div>
-
-
+    <!--scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
