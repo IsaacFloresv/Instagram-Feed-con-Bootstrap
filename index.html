@@ -44,18 +44,20 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body">
-                                    Here goes your new post
-                                </div>
-                                <div class="modal-footer">
-                                    <div class="footer-icon-map-marker" style="padding-right: 0.25rem;"><i
-                                            class="fas fa-map-marker-alt"></i></div>
-                                    <div class="footer-icon-camera" style="padding-right: 13.8rem">
-                                        <i class="fas fa-camera"></i>
+                                <div class="modal-body container-fluid">
+                                    <div class="input-group">
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
                                     </div>
-                                    <div class="text-left"><i class="bi bi-camera"></i><i class="bi bi-geo-alt"></i></div>
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <div class="floid-left mt-2">
+                                        <button class="bg-white rounded"><i class="bi bi-camera"></i></button>
+                                        <button class="bg-white rounded"><i class="bi bi-geo-alt"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary "
+                                        data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Agregar</button>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +69,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="bi bi-gear"></i>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
